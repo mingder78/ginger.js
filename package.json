@@ -2,7 +2,7 @@
 , "description": "Plugins for Mongoose on NodeJS"
 , "maintainers":
   [ { "name": "Ming-der Wang"
-    , "web": "https://github.com/mingder78/ginger.js/wiki"
+    , "web": "https://github.com/mingder78"
     }
   ]
 , "contributors" :
@@ -10,22 +10,32 @@
     , "web": "https://github.com/mingder78"
     }
   ]
-, "version": "0.1"
+, "version": "0.0.1"
 , "repository" :
   { "type" : "git"
   , "url" : "http://github.com/mingder78/ginger.git"
   }
-, "bugs" : { "web" : "http://github.com/mingder78/ginger.js/issues" }
+, "bugs" : { "url" : "http://github.com/mingder78/ginger.js/issues" }
 , "licenses" :
   [ { "type" : "MIT"
     , "url" : "http://github.com/mingder78/ginger.js/LICENSE"
     }
   ]
-  "devDependencies": {
-    "tobi": "0.3.2",
-    "mocha": "0.0.2"
-  },
-  "bin": {
+, "devDependencies": {
+     "tobi": ">= 0.3.2"
+   , "mocha": ">= 0.0.2"
+  }
+, "private": true
+, "dependencies": {
+      "express": ">= 2.5.8"
+    , "stylus": ">= 0.0.1"
+    , "jade": ">= 0.26.0"
+    , "connect": ">= 2.2.2"
+    , "mongoose": ">= 2.6.3"
+    , "coffee-script": ">= 1.3.1"
+    , "socket.io": ">= 0.9.6"
+  }
+, "bin": {
     "ginger": "bin/ginger.js"
   }
 }
